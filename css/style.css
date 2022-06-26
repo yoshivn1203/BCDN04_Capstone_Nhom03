@@ -842,6 +842,73 @@ h1 a.logo-brand {
 
 /*/book table*/
 
+/*--services--*/
+.services {
+  position: relative;
+}
+
+.box-wrap {
+  padding: 40px 40px;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+  background-color: var(--bg-color);
+  position: relative;
+  border: 1px solid var(--border-color-light);
+}
+
+.box-wrap:hover {
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box-wrap-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 30px;
+}
+
+.box-wrap h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  color: var(--heading-color);
+}
+
+.box-wrap h4 a:hover {
+  color: var(--primary-color);
+}
+
+.box-wrap h5 {
+  font-weight: 400;
+  color: var(--font-color);
+  font-size: 20px;
+  opacity: .8;
+}
+
+.box-wrap p {
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .box-wrap h5 {
+    font-size: 17px;
+  }
+
+  .box-wrap h4 a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .box-wrap {
+    padding: 30px 30px;
+  }
+}
+
+/*--//services--*/
+
 /*--/footer--*/
 .copyright #movetop {
   display: none;
