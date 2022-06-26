@@ -914,19 +914,26 @@ h1 a.logo-brand {
 
 .Categories {
   padding: 50px 0;
+  background: var(--bg-grey);
 }
 
 .Categories-title {
   text-align: center;
 }
 
-.Categories__item img {
+.Categories .Categories__img {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.Categories .Categories__img img {
   display: block;
   margin: 0 auto;
   text-align: center;
-  width: 100%;
-  border-radius: 6px;
+  width: 100%;  
 }
+
 .Categories__item {
   position: relative;
   margin: 20px 0;
@@ -939,17 +946,10 @@ h1 a.logo-brand {
   height: 0%;
 }
 
-.Categories__img {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  border-radius: 10px;
-  
-}
 
 .Categories__overplay {
   position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
   width: 100%;
@@ -990,6 +990,16 @@ h1 a.logo-brand {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+@media all and (max-width:800px) {
+  .Categories .Categories__item a h4 {
+    font-size: 18px;
+    line-height:28px;
+  }
+  .Categories .Categories__info span {
+      font-size: 16px;
+  }
 }
 
 /* /Categories */
