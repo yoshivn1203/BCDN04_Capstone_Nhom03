@@ -941,38 +941,28 @@ h1 a.logo-brand {
 
 
 
-/* .table */
+/* .Categories */
 
-.table {
+.Categories {
   padding: 50px 0;
 }
 
-.table-title {
+.Categories-title {
   text-align: center;
 }
 
-.table__flex {
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.table__item img {
+.Categories__item img {
   display: block;
   margin: 0 auto;
   text-align: center;
   width: 100%;
   border-radius: 6px;
-
-
 }
-
-.table__item {
+.Categories__item {
   position: relative;
   margin: 20px 0;
 }
-
-.table__info {
+.Categories__info {
   position: absolute;
   left: 30px;
   bottom: 80px;
@@ -980,7 +970,7 @@ h1 a.logo-brand {
   height: 0%;
 }
 
-.table__img {
+.Categories__img {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -989,7 +979,7 @@ h1 a.logo-brand {
   
 }
 
-.table__overplay {
+.Categories__overplay {
   position: absolute;
   top: 0;
   left: 0;
@@ -999,12 +989,12 @@ h1 a.logo-brand {
 
 }
 
-.table__item:hover .table__overplay {
-  background-color: rgba(220, 220, 220, 0.189);
+.Categories__item:hover img {
   transition: all 0.5s;
+  opacity: 0.85;
 }
 
-.table__info h4 {
+.Categories__info h4 {
   font-size: 22px;
   line-height: 30px;
   color: #fff;
@@ -1012,7 +1002,7 @@ h1 a.logo-brand {
 
 }
 
-.table__info span {
+.Categories__info span {
   font-weight: 600;
   color: var(--secondary-color);
   font-size: 18px;
@@ -1020,7 +1010,7 @@ h1 a.logo-brand {
 }
 
 
-.table__item .table__img::after {
+.Categories__item .Categories__img::after {
   bottom: 0;
   left: 0;
   width: 100%;
