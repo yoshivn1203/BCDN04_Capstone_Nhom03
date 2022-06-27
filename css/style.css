@@ -931,13 +931,14 @@ h1 a.logo-brand {
   display: block;
   margin: 0 auto;
   text-align: center;
-  width: 100%;  
+  width: 100%;
 }
 
 .Categories__item {
   position: relative;
   margin: 20px 0;
 }
+
 .Categories__info {
   position: absolute;
   left: 30px;
@@ -955,7 +956,6 @@ h1 a.logo-brand {
   width: 100%;
   height: 100%;
   background-color: transparent
-
 }
 
 .Categories__item:hover img {
@@ -995,14 +995,147 @@ h1 a.logo-brand {
 @media all and (max-width:800px) {
   .Categories .Categories__item a h4 {
     font-size: 18px;
-    line-height:28px;
+    line-height: 28px;
   }
+
   .Categories .Categories__info span {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
 /* /Categories */
+
+/* STATS BANNER */
+
+.middle {
+  background: url(../images/banner2.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.middle:before {
+  content: "";
+  background: rgb(16 15 19 / 66%);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.banner-content h3 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+  color: #fff;
+  max-width: 800px;
+}
+
+@media (max-width: 1080px) {
+  .banner-content h3 {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 736px) {
+  .banner-content h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 415px) {
+  .banner-content h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+/* /STATS BANNER */
+
+
+/*-- STATS --*/
+section.stats {
+  margin-top: -70px;
+  z-index: 10;
+  position: relative;
+}
+
+.stats-content p {
+  font-size: 1.1em;
+}
+
+.counter {
+  background-color: var(--bg-color);
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  padding: 40px 20px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  transition: .3s ease;
+}
+
+.counter:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+  transition: .3s ease;
+}
+
+.counter span.fa {
+  background: var(--primary-color);
+  font-size: 26px;
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  color: #fff;
+  text-align: center;
+}
+
+.timer {
+  font-size: 2.6em;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+p.count-text {
+  text-transform: capitalize;
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+@media (max-width:992px) {
+  section.stats {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .timer {
+    font-size: 2em;
+  }
+
+  .counter {
+    text-align: center;
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-content p {
+    font-size: 0.9em;
+  }
+}
+
+/* //STATS */
 
 /*--/footer--*/
 .copyright #movetop {
@@ -1207,8 +1340,3 @@ h1 a.logo-brand {
     font-size: 26px;
   }
 }
-
-
-
-
-
