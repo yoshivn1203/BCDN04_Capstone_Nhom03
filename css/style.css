@@ -1012,14 +1012,14 @@ h1 a.logo-brand {
 
 /* STATS BANNER */
 
-.middle {
+.banner2 {
   background: url(../images/banner2.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 1;
 }
 
-.middle:before {
+.banner2:before {
   content: "";
   background: rgb(16 15 19 / 66%);
   position: absolute;
@@ -1030,12 +1030,12 @@ h1 a.logo-brand {
   z-index: -1;
 }
 
-.banner-content {
+.banner2-content {
   max-width: 700px;
   margin: 0 auto;
 }
 
-.banner-content h3 {
+.banner2-content h3 {
   font-size: 45px;
   line-height: 55px;
   font-weight: 600;
@@ -1044,7 +1044,7 @@ h1 a.logo-brand {
 }
 
 @media (max-width: 1080px) {
-  .banner-content h3 {
+  .banner2-content h3 {
     font-size: 40px;
     line-height: 50px;
     max-width: 100%;
@@ -1052,14 +1052,14 @@ h1 a.logo-brand {
 }
 
 @media (max-width: 736px) {
-  .banner-content h3 {
+  .banner2-content h3 {
     font-size: 35px;
     line-height: 40px;
   }
 }
 
 @media (max-width: 415px) {
-  .banner-content h3 {
+  .banner2-content h3 {
     font-size: 26px;
     line-height: 34px;
   }
