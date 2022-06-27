@@ -165,7 +165,7 @@ p.white {
   border-radius: var(--border-radius-full);
 }
 
-/*-- container --*/
+/*-- CONTAINER --*/
 .container {
   width: 100%;
   padding-right: 15px;
@@ -196,7 +196,9 @@ p.white {
   }
 }
 
-/*-- //container --*/
+/*-- //CONTAINER --*/
+
+/* THIẾT LẬP 1 SỐ NÚT VÀ CHỮ DÙNG CHUNG */
 .btn-style,
 .btn-white {
   padding: 12px 45px;
@@ -344,6 +346,9 @@ a.link-style1 {
   }
 }
 
+/* //THIẾT LẬP 1 SỐ NÚT VÀ CHỮ DÙNG CHUNG */
+
+
 /* OVERLAY */
 /* Overlay style */
 .overlay {
@@ -355,7 +360,6 @@ a.link-style1 {
   z-index: 99999;
 }
 
-/* Overlay style */
 .overlay {
   position: fixed;
   width: 100%;
@@ -365,7 +369,7 @@ a.link-style1 {
   background: rgb(6 3 0 / 77%);
 }
 
-/* Overlay closing cross */
+/* NÚT X TRÊN OVERLAY */
 .overlay .overlay-close {
   width: 40px;
   height: 40px;
@@ -429,7 +433,7 @@ button#trigger-overlay {
   color: var(--primary-color);
 }
 
-/* Effects */
+/* HIỆU ỨNG */
 .overlay-scale {
   visibility: hidden;
   opacity: 0;
@@ -481,7 +485,7 @@ button#trigger-overlay {
 
 /* //OVERLAY  */
 
-/*-- toggle switch --*/
+/*-- ĐỔI THEME --*/
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -502,8 +506,9 @@ button#trigger-overlay {
   display: none;
 }
 
-/*-- //toggle switch --*/
-/*-- dark and light mode styling --*/
+/*-- //ĐỔI THEME --*/
+
+/*-- NÚT ĐỔI MÀU THEME --*/
 .mode-container {
   width: 24px;
   height: 24px;
@@ -596,9 +601,9 @@ input:checked+.mode-container i.gg-moon {
   display: none;
 }
 
-/*-- //dark and light mode styling --*/
+/*-- //NÚT ĐỔI MÀU THEME --*/
 
-/*--/banner-section-*/
+/*--/BANNER*/
 .header {
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -731,9 +736,9 @@ h1 a.logo-brand {
   }
 }
 
-/*--//banner-section--*/
+/*--//BANNER*/
 
-/*book table*/
+/*BOOK TABLE*/
 .book__table {
   background: var(--primary-color);
 }
@@ -840,77 +845,9 @@ h1 a.logo-brand {
   }
 }
 
-/*/book table*/
+/*/BOOK TABLE*/
 
-/*--services--*/
-.services {
-  position: relative;
-}
-
-.box-wrap {
-  padding: 40px 40px;
-  transition: all 0.5s ease 0s;
-  border-radius: 8px;
-  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
-  background-color: var(--bg-color);
-  position: relative;
-  border: 1px solid var(--border-color-light);
-}
-
-.box-wrap:hover {
-  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
-}
-
-.box-wrap-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 30px;
-}
-
-.box-wrap h4 a {
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  display: block;
-  color: var(--heading-color);
-}
-
-.box-wrap h4 a:hover {
-  color: var(--primary-color);
-}
-
-.box-wrap h5 {
-  font-weight: 400;
-  color: var(--font-color);
-  font-size: 20px;
-  opacity: .8;
-}
-
-.box-wrap p {
-  margin: 0;
-}
-
-@media (max-width: 1080px) {
-  .box-wrap h5 {
-    font-size: 17px;
-  }
-
-  .box-wrap h4 a {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 415px) {
-  .box-wrap {
-    padding: 30px 30px;
-  }
-}
-
-/*--//services--*/
-
-
-/* .Categories */
+/* CATEGORIES */
 
 .Categories {
   padding: 50px 0;
@@ -1003,7 +940,75 @@ h1 a.logo-brand {
   }
 }
 
-/* /Categories */
+/* /CATEGORIES */
+
+/*--SERVICES--*/
+.services {
+  position: relative;
+}
+
+.box-wrap {
+  padding: 40px 40px;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+  background-color: var(--bg-color);
+  position: relative;
+  border: 1px solid var(--border-color-light);
+}
+
+.box-wrap:hover {
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+.box-wrap-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 30px;
+}
+
+.box-wrap h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  color: var(--heading-color);
+}
+
+.box-wrap h4 a:hover {
+  color: var(--primary-color);
+}
+
+.box-wrap h5 {
+  font-weight: 400;
+  color: var(--font-color);
+  font-size: 20px;
+  opacity: .8;
+}
+
+.box-wrap p {
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .box-wrap h5 {
+    font-size: 17px;
+  }
+
+  .box-wrap h4 a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .box-wrap {
+    padding: 30px 30px;
+  }
+}
+
+/*--//SERVICES--*/
+
 
 /* STATS BANNER */
 
@@ -1137,7 +1142,7 @@ p.count-text {
 
 /* //STATS */
 
-/*--/footer--*/
+/*--FOOTER--*/
 .copyright #movetop {
   display: none;
   position: fixed;
@@ -1340,3 +1345,5 @@ p.count-text {
     font-size: 26px;
   }
 }
+
+/*--//FOOTER--*/
