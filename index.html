@@ -11,13 +11,19 @@
   <link href="//fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet" />
   <link href="//fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"
     rel="stylesheet" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
     integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+
   <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body>
@@ -460,6 +466,33 @@
   </section>
   <!-- //STATS -->
 
+<!-- video -->
+
+
+<section class="video" id="video">
+  <div class="video__BG">
+    <div class="container">
+      <div class="video__nutplaygrid">
+        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+          <span class="video-play-icon">
+            <span class="fa fa-play"></span>
+          </span>
+        </a>
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+          <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" frameborder="0"
+              allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+        <iframe src="https://player.vimeo.com/video/305185528?h=195bf3cba0" frameborder="0"
+            allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- video -->
+
+
   <!--/BLOGS-->
   <section class="blogs py-5" id="blogs">
     <div class="container py-md-5 py-2">
@@ -675,7 +708,44 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/trigger-overlay.js"></script>
   <!-- //nav -->
+<!-- //script for tesimonials carousel slider -->
+  <!-- magnific popup -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
 
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+  </script>
   <!-- /counter-->
   <script src="js/counter.js"></script>
   <!-- //counter-->
