@@ -18,6 +18,11 @@
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+
+    <!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
 <!-- owl -->
 <link rel="stylesheet" href="./css/owl.carousel.min.css">
 <link rel="stylesheet" href="./css/owl.theme.default.min.css">
@@ -467,6 +472,30 @@
   </section>
   <!-- //STATS -->
 
+  <!-- video -->
+
+
+<section class="video" id="video">
+  <div class="video__BG">
+    <div class="container">
+      <div class="video__nutplaygrid">
+        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+          <span class="video-play-icon">
+            <span class="fa fa-play"></span>
+          </span>
+        </a>
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- video -->
+
   <!--/BLOGS-->
   <section class="blogs py-5" id="blogs">
     <div class="container py-md-5 py-2">
@@ -784,6 +813,44 @@
 
   <!-- /counter-->
   <script src="js/counter.js"></script>
+
+  <!-- magnific popup -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+  </script>
 
 <!-- owl -->
 <script src="./js/owl.carousel.min.js"></script>
