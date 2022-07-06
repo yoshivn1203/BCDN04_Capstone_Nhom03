@@ -15,6 +15,5 @@ Phân công UI theo thứ tự từ trên xuống
 | Testimonials       | Long   |
 | Back to top        | Nguyên |
 | Footer             | Long   |
-
 | Deploy | Nguyên |
 | Quay video Demo | Long |
