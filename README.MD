@@ -21,7 +21,7 @@ Phân công UI theo thứ tự từ trên xuống
 | Back to top        | Nguyên |
 | Footer             | Long   |
 
-| Task            | Dev    |
-| --------------- | ------ |
-| Deploy          | Nguyên |
-| Quay video Demo | Long   |
+| Task               | Dev    |
+| ------------------ | ------ |
+| Deploy             | Nguyên |
+| Quay video Demo    | Long   |
