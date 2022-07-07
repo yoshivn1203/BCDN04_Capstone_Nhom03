@@ -1,6 +1,7 @@
-Nhóm 3: 
- - Nguyễn Khải Nguyên
- - Phạm Long
+Nhóm 3:
+
+- Nguyễn Khải Nguyên
+- Phạm Long
 
 Phân công UI theo thứ tự từ trên xuống
 
@@ -20,8 +21,7 @@ Phân công UI theo thứ tự từ trên xuống
 | Back to top        | Nguyên |
 | Footer             | Long   |
 
-
-| Task               | Dev    |
-| ------------------ | ------ |
-| Deploy             | Nguyên |
-| Quay video Demo    | Long |
+| Task            | Dev    |
+| --------------- | ------ |
+| Deploy          | Nguyên |
+| Quay video Demo | Long   |
