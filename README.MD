@@ -19,7 +19,7 @@ Phân công UI theo thứ tự từ trên xuống
 | Blog Posts         | Nguyên |
 | Testimonials       | Long   |
 | Back to top        | Nguyên |
-| Footer             | Nguyên |
+| Footer             | Long   |
 
 | Task            | Dev    |
 | --------------- | ------ |
